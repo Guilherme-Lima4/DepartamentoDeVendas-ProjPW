@@ -109,7 +109,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 							Não possui uma conta?
 						</span>
 
-						<a class="txt2" href="cadastroCliente.html">
+						<a class="txt2" href="cadastroCliente.php">
 							Cadastrar
 						</a>
 					</div>
