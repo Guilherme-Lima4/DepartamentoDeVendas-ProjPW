@@ -25,8 +25,8 @@ if(isset($_POST['email']) || isset($_POST['senha']) || isset($_POST['nome']) || 
             die("Erro ao cadastrar Vendedor " . mysqli_error($conn));
         } else {
             echo "<script language='javascript' type='text/javascript'>
-        alert('Vendedor cadastrado com sucesso!')
-        window.location.href='loginVendedor.php'</script>";
+        alert('Cliente cadastrado com sucesso!')
+        window.location.href='loginCliente.php'</script>";
         }
         
 
