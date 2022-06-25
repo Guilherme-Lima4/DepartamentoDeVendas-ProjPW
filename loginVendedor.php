@@ -28,7 +28,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             $_SESSION['id'] = $usuario['idVendedor'];
             $_SESSION['nome'] = $usuario['nomeVendedor'];
 
-            header("Location: homeVendedor.html");
+            header("Location: homeVendedor.php");
 
         } else {
             echo "Falha ao logar! E-mail ou senha incorretos";
