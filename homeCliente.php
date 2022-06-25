@@ -1,3 +1,8 @@
+<?php
+
+include('protect.php');
+
+?>
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -47,8 +52,11 @@
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3">
-                <a href="https://nicepage.com/c/pricing-html-templates" class="u-btn u-btn-round u-button-style u-custom-item u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3">Informaçoes pessoais</a>
+                <a href="https://nicepage.com/c/pricing-html-templates" class="u-btn u-btn-round u-button-style u-custom-item u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3">Informaçoes pessoais</a>    
               </div>
+              <br>
+              <br>
+              <a href="logout.php" class="Logout">Logout</a>
             </div>
           </div>
         </div>

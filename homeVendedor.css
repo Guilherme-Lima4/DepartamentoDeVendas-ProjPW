@@ -75,6 +75,27 @@
   min-height: 800px;
 }
 
+.Logout {
+	background:linear-gradient(to bottom, #fa4d6a 5%, #408c99 100%);
+	background-color:#fa4d6a;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:32px 15px;
+	text-decoration:none;
+}
+.Logout:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #fa4d6a 100%);
+	background-color:#408c99;
+}
+.Logout:active {
+	position:relative;
+	top:1px;
+}
+
 .u-section-1-2 .u-text-1 {
   margin: 60px auto 0 0;
 }
