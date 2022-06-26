@@ -1,3 +1,9 @@
+<?php
+
+include('protect.php');
+
+?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -53,11 +59,12 @@
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-container-style u-list-item u-repeater-item">
+            <form action="compraProduto.php" method="post">
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="985" data-image-height="985" src="images/roboo.jpg">
                 <h3 class="u-text u-text-default u-text-1">Robô aspirador de Pó</h3>
                 <p class="u-text u-text-2">R$2.500,00</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-1">Comprar</a>
+                <input type="submit" value="COMPRAR" name="robo" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-1">
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
@@ -65,7 +72,7 @@
                 <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="1000" data-image-height="600" src="images/cafeteira.png">
                 <h3 class="u-text u-text-default u-text-3">Cafeteira inteligente</h3>
                 <p class="u-text u-text-4">R$1.500,00</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-2">COMPRAR</a>
+                <input type="submit" value="COMPRAR" name="cafeteira" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-2">
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
@@ -73,8 +80,9 @@
                 <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="395" data-image-height="395" src="images/oculos.jpg">
                 <h3 class="u-text u-text-default u-text-5">Óculos inteligente</h3>
                 <p class="u-text u-text-6">R$1.250,00</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-3">COMPRAR</a>
+                <input type="submit" value="COMPRAR" name="oculos" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-3">
               </div>
+            </form>  
             </div>
           </div>
         </div>
