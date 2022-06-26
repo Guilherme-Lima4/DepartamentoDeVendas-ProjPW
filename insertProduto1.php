@@ -1,6 +1,7 @@
 <?php
 
 include('conexaoLoginCliente.php');
+include('protect.php');
 
 if(isset($_POST['robo'])){
 
