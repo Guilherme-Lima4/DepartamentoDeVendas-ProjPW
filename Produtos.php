@@ -1,57 +1,6 @@
 <?php
 
 include('protect.php');
-include('conexaoLoginCliente.php');
-
-if(isset($_POST['robo'])){
-
-    $id = $_SESSION['id'];
-    $produto = "Robô Aspirador de pó";
-    $qtdProduto = 1;
-    $valorProduto = 2.500;
-    $sql_code = "INSERT INTO venda (idVendedor, idCliente, produto, qtdProduto, valorProduto) VALUES ('1', '$id', '$produto', '$qtdProduto', '$valorProduto')";
-    
-    if (!mysqli_query($conn, $sql_code)) {
-        die("Erro ao comprar produto! " . mysqli_error($conn));
-    } else {
-        echo "<script language='javascript' type='text/javascript'>
-    alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página 'Notas fiscais'')
-    window.location.href='homeCliente.php'</script>";
-    }
-
-} else if(isset($_POST['cafeteira'])){
-
-    $id = $_SESSION['id'];
-    $produto = "Cafeteira inteligente";
-    $qtdProduto = 1;
-    $valorProduto = 1.500;
-    $sql_code = "INSERT INTO venda (idVendedor, idCliente, produto, qtdProduto, valorProduto) VALUES ('1', '$id', '$produto', '$qtdProduto', '$valorProduto')";
-
-    if (!mysqli_query($conn, $sql_code)) {
-        die("Erro ao comprar produto! " . mysqli_error($conn));
-    } else {
-        echo "<script language='javascript' type='text/javascript'>
-    alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página 'Notas fiscais'')
-    window.location.href='homeCliente.php'</script>";
-    }
-
-} else if(isset($_POST['oculos'])){
-
-
-    $id = $_SESSION['id'];
-    $produto = "Óculos inteligente";
-    $qtdProduto = 1;
-    $valorProduto = 1.250;
-    $sql_code = "INSERT INTO venda (idVendedor, idCliente, produto, qtdProduto, valorProduto) VALUES ('1', '$id', '$produto', '$qtdProduto', '$valorProduto')";
-
-    if (!mysqli_query($conn, $sql_code)) {
-        die("Erro ao comprar produto! " . mysqli_error($conn));
-    } else {
-        echo "<script language='javascript' type='text/javascript'>
-    alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página 'Notas fiscais'')
-    window.location.href='homeCliente.php'</script>";
-    }
-}
 
 ?>
 
@@ -110,7 +59,7 @@ if(isset($_POST['robo'])){
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-container-style u-list-item u-repeater-item">
-            <form action="" method="post">
+            <form action="insertProduto1.php" method="post">
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="985" data-image-height="985" src="images/roboo.jpg">
                 <h3 class="u-text u-text-default u-text-1">Robô aspirador de Pó</h3>
